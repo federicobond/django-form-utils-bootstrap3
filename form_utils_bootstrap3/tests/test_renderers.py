@@ -3,7 +3,6 @@ from __future__ import unicode_literals
 from django import forms
 from django.template import Template, Context
 from form_utils.forms import BetterForm
-
 from form_utils_bootstrap3.renderers import BetterFormRenderer
 
 
