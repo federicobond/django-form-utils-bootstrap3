@@ -13,6 +13,9 @@ setuptools.setup(
 
     packages=setuptools.find_packages(),
 
+    setup_requires=['pytest-runner'],
+    tests_require=['pytest'],
+
     classifiers=[
         'Development Status :: 4 - Beta',
         'Environment :: Web Environment',
