@@ -1,6 +1,7 @@
 from __future__ import unicode_literals
 
 from django import forms
+from django.template import Template, Context
 from form_utils.forms import BetterForm
 
 from form_utils_bootstrap3.renderers import BetterFormRenderer
@@ -36,3 +37,10 @@ def test_rendered_works_on_default_forms():
     form = TestForm()
     rendered = BetterFormRenderer(form).render()
     assert '<div class="form-group">' in rendered
+
+
+def test_renderer_configuration():
+    template = Template('{% load bootstrap3 %}{% bootstrap_form form %}')
+    context = Context({'form': TestBetterForm()})
+    rendered = template.render(context)
+    assert '<fieldset>' in rendered

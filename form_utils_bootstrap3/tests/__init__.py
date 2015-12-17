@@ -9,6 +9,7 @@ if not settings.configured:
         INSTALLED_APPS=[
             'django.contrib.contenttypes',
             'django.contrib.auth',
+            'bootstrap3',
             'form_utils',
         ],
         DATABASES={
@@ -20,6 +21,11 @@ if not settings.configured:
         MEDIA_URL='/media/',
         STATIC_URL='/static/',
         MIDDLEWARE_CLASSES=[],
+        BOOTSTRAP3={
+            'form_renderers': {
+                'default': 'form_utils_bootstrap3.renderers.BetterFormRenderer'
+            }
+        }
     )
 
     settings.configure(**settings_dict)
