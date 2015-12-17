@@ -17,7 +17,7 @@ setuptools.setup(
         'Development Status :: 4 - Beta',
         'Environment :: Web Environment',
         'Intended Audience :: Developers',
-        'License :: OSI Approved :: MIT License'
+        'License :: OSI Approved :: MIT License',
         'Operating System :: OS Independent',
         'Development Status :: 2 - Pre-Alpha',
         'Programming Language :: Python',
