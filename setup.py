@@ -16,6 +16,12 @@ setuptools.setup(
     setup_requires=['pytest-runner'],
     tests_require=['pytest'],
 
+    install_requires=[
+        'Django',
+        'django-form-utils',
+        'django-bootstrap3',
+    ],
+
     classifiers=[
         'Development Status :: 4 - Beta',
         'Environment :: Web Environment',
