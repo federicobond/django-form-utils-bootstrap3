@@ -2,7 +2,7 @@ import setuptools
 
 setuptools.setup(
     name="django-form-utils-bootstrap3",
-    version="0.1.0",
+    version="0.1.1",
     url="https://github.com/federicobond/django-form-utils-bootstrap3",
 
     author="Federico Bond",
