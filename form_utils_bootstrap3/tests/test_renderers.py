@@ -5,6 +5,12 @@ from form_utils.forms import BetterForm
 
 from form_utils_bootstrap3.renderers import BetterFormRenderer
 
+
+class TestForm(forms.Form):
+    first_name = forms.CharField()
+    last_name = forms.CharField()
+
+
 class TestBetterForm(BetterForm):
     first_name = forms.CharField()
     last_name = forms.CharField()
@@ -24,3 +30,9 @@ def test_renderer_outputs_fielsets():
     assert '<fieldset>\n<legend>Basic Information</legend>\n' in rendered
     assert '<div class="form-group">' in rendered
     assert '</fieldset>' in rendered
+
+
+def test_rendered_works_on_default_forms():
+    form = TestForm()
+    rendered = BetterFormRenderer(form).render()
+    assert '<div class="form-group">' in rendered

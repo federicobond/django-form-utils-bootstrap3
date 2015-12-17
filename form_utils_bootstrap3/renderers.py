@@ -34,7 +34,7 @@ class BetterFormRenderer(FormRenderer):
         return '\n'.join(output)
 
     def render_fields(self):
-        has_fieldsets = getattr(self.form, 'fieldsets')
+        has_fieldsets = getattr(self.form, 'fieldsets', None)
         if not has_fieldsets:
             return super(BetterFormRenderer, self).render_fields()
 
