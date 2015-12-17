@@ -28,6 +28,14 @@ if not settings.configured:
         }
     )
 
+    if django.VERSION >= (1, 8):
+        settings_dict['TEMPLATES'] = [
+            {
+                'BACKEND': 'django.template.backends.django.DjangoTemplates',
+                'DIRS': []
+            }
+        ]
+
     settings.configure(**settings_dict)
 
 
