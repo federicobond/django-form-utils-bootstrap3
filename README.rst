@@ -1,3 +1,4 @@
+============================
 django-form-utils-bootstrap3
 ============================
 
@@ -12,32 +13,28 @@ django-form-utils-bootstrap3
 Render forms with fieldsets using Bootstrap markup via django-form-utils and django-bootstrap3
 
 Configuration
-------------
+-------------
 
 Modify your Django project settings to include:
 
-````
-BOOTSTRAP3 = {
-    'form_renderers': {
-        'default': 'form_utils_bootstrap3.renderers.BetterFormRenderer'
+    BOOTSTRAP3 = {
+        'form_renderers': {
+            'default': 'form_utils_bootstrap3.renderers.BetterFormRenderer'
+        }
     }
-}
-````
 
 Installation
 ------------
 
-````
-pip install django-form-utils-bootstrap3
-````
+    pip install django-form-utils-bootstrap3
 
 Requirements
-^^^^^^^^^^^^
+------------
 
 A Django project using:
 
- * django-form-utils
- * django-bootstrap3
+- django-form-utils
+- django-bootstrap3
 
 Compatibility
 -------------
