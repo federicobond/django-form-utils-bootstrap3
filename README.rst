@@ -2,11 +2,11 @@
 django-form-utils-bootstrap3
 ============================
 
-.. image:: https://img.shields.io/pypi/v/django-form-utils-bootstrap3.svg
-    :target: https://pypi.python.org/pypi/django-form-utils-bootstrap3
+.. image:: https://badge.fury.io/py/django-form-utils-bootstrap3.svg
+    :target: https://badge.fury.io/py/django-form-utils-bootstrap3
     :alt: Latest PyPI version
 
-.. image:: https://travis-ci.org/federicobond/django-form-utils-bootstrap3.png
+.. image:: https://travis-ci.org/federicobond/django-form-utils-bootstrap3.svg
    :target: https://travis-ci.org/federicobond/django-form-utils-bootstrap3
    :alt: Latest Travis CI build status
 
