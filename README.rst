@@ -15,13 +15,15 @@ Render forms with fieldsets using Bootstrap markup via django-form-utils and dja
 Configuration
 -------------
 
-Modify your Django project settings to include:::
+Modify your Django project settings to include::
 
     BOOTSTRAP3 = {
         'form_renderers': {
             'default': 'form_utils_bootstrap3.renderers.BetterFormRenderer'
         }
     }
+    
+You can continue using the same ``{% bootstrap_form form %}`` tags, but they now take into account the existence of fielsets in ``BetterForm`` instances. 
 
 Installation
 ------------
