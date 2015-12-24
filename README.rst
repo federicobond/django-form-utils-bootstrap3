@@ -23,7 +23,7 @@ Modify your Django project settings to include::
         }
     }
     
-You can continue using the same ``{% bootstrap_form form %}`` tags, but they now take into account the existence of fielsets in ``BetterForm`` instances. 
+You can continue using the same ``{% bootstrap_form form %}`` tags, but they now take into account the existence of fieldsets in ``BetterForm`` instances.
 
 Installation
 ------------
