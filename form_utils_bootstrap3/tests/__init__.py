@@ -38,6 +38,4 @@ if not settings.configured:
 
     settings.configure(**settings_dict)
 
-
-if django.VERSION >= (1, 7):
-    django.setup()
+django.setup()
