@@ -9,8 +9,15 @@ class BetterFormRenderer(FormRenderer):
     def render_fieldset(self, fieldset):
         output = []
 
-        output.append('<fieldset>')
+        if fieldset.classes:
+            output.append('<fieldset class="{}">'.format(fieldset.classes))
+        else:
+            output.append('<fieldset>')
+
         output.append('<legend>{}</legend>'.format(fieldset.legend))
+
+        if fieldset.description:
+            output.append('<p>{}</p>'.format(fieldset.description))
 
         for field in fieldset:
             output.append(render_field(
