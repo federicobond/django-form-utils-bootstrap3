@@ -29,8 +29,6 @@ class BetterFormRenderer(FormRenderer):
                 show_label=self.show_label,
                 show_help=self.show_help,
                 exclude=self.exclude,
-                set_required=self.set_required,
-                set_disabled=self.set_disabled,
                 size=self.size,
                 horizontal_label_class=self.horizontal_label_class,
                 horizontal_field_class=self.horizontal_field_class,
